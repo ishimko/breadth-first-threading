@@ -17,14 +17,14 @@ def example_tree():
       /     / \
      4     6   7
     """
-    _1 = root = Node(1)
-    _2 = root.left = Node(2)
-    _3 = root.right = Node(3)
+    _1 = tree = Node(1)
+    _2 = _1.left = Node(2)
+    _3 = _1.right = Node(3)
     _4 = _2.left = Node(4)
     _6 = _3.left = Node(6)
     _7 = _3.right = Node(7)
 
-    return root
+    return tree
 
 
 def breadth_first_queue(node, node_func):
